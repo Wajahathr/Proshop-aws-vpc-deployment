@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  # 1. Database Container
+  mongodb:
+    image: mongo:latest
+    container_name: proshop-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db # Persists DB data even if container stops
+
+  # 2. Application Container
+  proshop-app:
+    build: .
+    container_name: proshop-live
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+      - MONGO_URI=mongodb://mongodb:27017/proshop # Points to the mongodb service
+      - JWT_SECRET=mysecretkey123
+      - PAYPAL_CLIENT_ID=sb
+    depends_on:
+      - mongodb # Ensures DB starts before the app
+
+volumes:
+  mongo-data:

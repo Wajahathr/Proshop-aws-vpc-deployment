@@ -1,0 +1,10 @@
+# Ignore entire application folders from language stats
+frontend/** linguist-vendored
+backend/** linguist-vendored
+**/*.js linguist-detectable=false
+**/*.jsx linguist-detectable=false
+
+# Highlight DevOps Files
+Dockerfile linguist-detectable=true
+*.yml linguist-detectable=true
+*.yaml linguist-detectable=true
