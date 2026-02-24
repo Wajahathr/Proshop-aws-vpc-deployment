@@ -64,7 +64,7 @@ Deploying code to a hidden, private server is a complex challenge. I solved this
 ## 👨‍💻 About The Author
 
 **Wajahat Rasool**
-*Junior Cloud & DevOps Engineer ,Bahria University Karachi Campus*
+*Junior Cloud & DevOps Engineer , Bahria University Karachi Campus*
 
 This project was executed as part of the intensive training. It serves as a practical demonstration of moving beyond theoretical knowledge into building, troubleshooting, and automating resilient cloud infrastructures.
 
