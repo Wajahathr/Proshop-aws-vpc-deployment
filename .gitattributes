@@ -1,0 +1,12 @@
+# GitHub ko batao ke application code ko language stats mein count na kare
+*.js linguist-detectable=false
+*.jsx linguist-detectable=false
+*.json linguist-detectable=false
+*.html linguist-detectable=false
+*.css linguist-detectable=false
+
+# Sirf DevOps aur Config files ko highlight kare
+Dockerfile linguist-detectable=true
+*.yml linguist-detectable=true
+*.yaml linguist-detectable=true
+*.conf linguist-detectable=true
